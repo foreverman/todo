@@ -1,0 +1,8 @@
+<%= render "shared/error_messages", target: @project %>
+<%= form_for @project do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
